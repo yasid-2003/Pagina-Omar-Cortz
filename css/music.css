@@ -1,0 +1,134 @@
+.music-hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1db954 0%, #191414 100%);
+}
+
+.music-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(circle at 20% 50%, rgba(29, 185, 84, 0.3) 0%, transparent 50%);
+    z-index: 0;
+    pointer-events: none;
+}
+.music-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.music-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.music-hero-content h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.music-hero-content p {
+    font-size: 20px;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    color: #1db954;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* La parte de las tarjetas del diseño */
+
+.music-container {
+    background-color: #000;
+    padding: 60px 20px;
+}
+
+.music-container h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.music-card {
+    background-color: #191414;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.music-card:hover {
+    background-color: #282828;
+}
+
+.music-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.music-card h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.music-card p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+}
+
+.play-btn {
+    background-color: #1db954;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: #1ed760;
+}
+
+.audio-player {
+    display: none;
+}
